@@ -40,4 +40,14 @@ const untilNum = (num) => {
      console.log(i)
     }
 };
-untilNum(15)
+
+//untilNum(15);
+
+//Write a function multiply that takes in two number parameters and returns their product.
+
+const multiply = (num1, num2) => {
+    let result = num1 * num2;
+    return result;
+}
+
+//console.log(multiply(2, 4));
