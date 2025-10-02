@@ -77,3 +77,12 @@ const isNegative = (num) => {
 
 //console.log(isNegative(Math.PI));
 
+// Write a function triangleArea that takes in the height and base of a triangle and returns the area of the triangle.
+
+const triangleArea = (height, base) => {
+   let area = (height * base) * 0.5
+   return area;
+};
+// console.log(triangleArea(5, 7))
+
+// Write a function betweenTwentyAndFourty that takes in a number parameter and checks whether a given integer is within 20 to 40. It returns true if it is and false if not.
