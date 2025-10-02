@@ -1,5 +1,6 @@
 //Code your solutions in this file
 // Write a function fiveToOneHundred that console logs all numbers from 5 to 100.
+
 const fiveToOneHundred = () => {
     for (let i = 5; i <= 100; i++){
         console.log(i);
@@ -17,4 +18,19 @@ const multiplesOfThree  = (n) => {
         } 
     }
 }
+
 // multiplesOfThree(100);
+
+// Write a function multiplesOfThreeOrFive that console logs all positive numbers to 100 if that number is either a mulitple of 3 or a mutliple of 5.
+
+const multiplesOfThreeOrFive = (n) => {
+    for(let i = 1; i <= n;i++ ){
+        if(i % 3 === 0 || i % 5 === 0){
+            console.log(i);
+        } 
+    }
+}
+
+//multiplesOfThreeOrFive(100);
+
+// Write a function untilNum that takes in an integer parameter and console logs all numbers from 1 to that number.
