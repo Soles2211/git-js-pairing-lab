@@ -34,3 +34,10 @@ const multiplesOfThreeOrFive = (n) => {
 //multiplesOfThreeOrFive(100);
 
 // Write a function untilNum that takes in an integer parameter and console logs all numbers from 1 to that number.
+
+const untilNum = (num) => {
+    for (let i = 1; i <= num; i++){
+     console.log(i)
+    }
+};
+untilNum(15)
