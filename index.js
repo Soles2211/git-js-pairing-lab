@@ -9,3 +9,12 @@ const fiveToOneHundred = () => {
 //fiveToOneHundred();
 
 //Write a function multiplesOfThree that console logs all positive numbers to 100 that is a multiple of 3.
+
+const multiplesOfThree  = (n) => {
+    for(let i = 1; i <= n;i++ ){
+        if(i % 3 === 0){
+            console.log(i);
+        } 
+    }
+}
+// multiplesOfThree(100);
