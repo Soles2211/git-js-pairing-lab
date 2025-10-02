@@ -51,3 +51,15 @@ const multiply = (num1, num2) => {
 }
 
 //console.log(multiply(2, 4));
+// Write a function add that takes in two number parameters and returns their sum. But if the two values are the same, return triple their sum!
+const tripleMultiple = (num1, num2) => {
+    let result = num1 * num2
+    if (num1 === num2){
+        let result2 = (num1 + num2) * 3
+        return result2
+    } else {
+        return result
+    }
+}
+
+// console.log(tripleMultiple(2, 2));
