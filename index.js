@@ -6,4 +6,6 @@ const fiveToOneHundred = () => {
     }
 }
 
-fiveToOneHundred();
+//fiveToOneHundred();
+
+//Write a function multiplesOfThree that console logs all positive numbers to 100 that is a multiple of 3.
