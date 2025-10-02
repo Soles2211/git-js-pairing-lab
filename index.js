@@ -51,6 +51,7 @@ const multiply = (num1, num2) => {
 }
 
 //console.log(multiply(2, 4));
+
 // Write a function add that takes in two number parameters and returns their sum. But if the two values are the same, return triple their sum!
 const add = (num1, num2) => {
     let result = num1 * num2
@@ -63,3 +64,16 @@ const add = (num1, num2) => {
 }
 
 // console.log(add(2, 2));
+
+//Write a function isNegative that takes in a number parameter and returns true is the number is a negative value and false is the number is a positive value.
+
+const isNegative = (num) => {
+    if (num < 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+//console.log(isNegative(Math.PI));
+
