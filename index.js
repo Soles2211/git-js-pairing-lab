@@ -109,6 +109,43 @@ const largest = (num1, num2, num3) => {
     }
 }
 
+// largest(30, 22, 17)
+
+//Write a function printTime that prints out the current time in the format HH:MM:ss. Do not hard code the hour, minute, or seconds values.
+
+const printTime = () => {
+    let time = new Date();
+    let hour = time.getHours();
+    let min = time.getMinutes();
+    let sec = time.getSeconds();
+
+    console.log(`The current time is: ${hour}: ${min}:${sec}`);
+}
+
+//printTime();
+
+//Write a function isLeapYear to determine whether a given year is a leap year in the Gregorian calendar.
+
+const isLeapYear = (year) => {
+    if (year % 100 === 0 && year % 400 !== 0){
+        return false;
+    } else if (year % 400 === 0 || year % 4 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+//console.log(isLeapYear(1999));
+
+//Write a function getExtention to get the extension of a filename.
+
+const getExtension = (file) => {
+    return file.substring(file.indexOf("."));
+}
+
+//console.log(getExtension("hello.txt"));
+
 //largest(30, 22, 17)
 
 //Write a function absoluteNineteen to compute the absolute difference between a specified number and 19. Returns triple their absolute difference if the specified number is greater than 19.
@@ -149,3 +186,5 @@ const changeString = (str) => {
 }
 
 console.log(changeString("add"));
+
+
