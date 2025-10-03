@@ -109,7 +109,43 @@ const largest = (num1, num2, num3) => {
     }
 }
 
-largest(30, 22, 17)
+//largest(30, 22, 17)
 
+//Write a function absoluteNineteen to compute the absolute difference between a specified number and 19. Returns triple their absolute difference if the specified number is greater than 19.
 
+const absoluteNineteen = (num) => {
+    let abs = Math.abs(num - 19);
+    if (num > 19) {
+        return abs * 3;
+    } else {
+        return abs;
+    }
+}
 
+//console.log(absoluteNineteen(39));
+
+//Write a function switchLetters that creates a new string from a given string changing the position of first and last characters.
+
+const switchLetters = (str) => {
+  if (str.length <= 1) return str;
+  return str[str.length - 1] + str.slice(1, -1) + str[0];
+};
+
+// console.log(switchLetters("anne"))         //return "enna"
+// console.log(switchLetters("hello world"))  //return "dello worlh"
+// console.log(switchLetters("a"))            //return "a"
+// console.log(switchLetters(""))
+
+// Write a function changeString to replace every character in a given string with the character following it in the alphabet/
+
+const changeString = (str) => {
+    let chr = str.split("");
+    for (let i = 0; i < str.length; i++) {
+        let x = chr[i].charCodeAt() - "a".charCodeAt();
+        x = (x + 1) % 26;
+        chr[i] = String.fromCharCode(x + "a".charCodeAt());
+    }
+    return chr.join("");
+}
+
+console.log(changeString("add"));
