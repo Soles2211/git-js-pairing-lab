@@ -111,10 +111,6 @@ const largest = (num1, num2, num3) => {
 
 // largest(30, 22, 17)
 
-
-
-
-
 //Write a function printTime that prints out the current time in the format HH:MM:ss. Do not hard code the hour, minute, or seconds values.
 
 const printTime = () => {
