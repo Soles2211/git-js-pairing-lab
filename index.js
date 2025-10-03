@@ -1,5 +1,5 @@
 //Code your solutions in this file
-// Write a function fiveToOneHundred that console logs all numbers from 5 to 100.
+//1. Write a function fiveToOneHundred that console logs all numbers from 5 to 100.
 
 const fiveToOneHundred = () => {
     for (let i = 5; i <= 100; i++){
@@ -9,7 +9,7 @@ const fiveToOneHundred = () => {
 
 //fiveToOneHundred();
 
-//Write a function multiplesOfThree that console logs all positive numbers to 100 that is a multiple of 3.
+//2. Write a function multiplesOfThree that console logs all positive numbers to 100 that is a multiple of 3.
 
 const multiplesOfThree  = (n) => {
     for(let i = 1; i <= n;i++ ){
@@ -21,7 +21,7 @@ const multiplesOfThree  = (n) => {
 
 // multiplesOfThree(100);
 
-// Write a function multiplesOfThreeOrFive that console logs all positive numbers to 100 if that number is either a mulitple of 3 or a mutliple of 5.
+//3. Write a function multiplesOfThreeOrFive that console logs all positive numbers to 100 if that number is either a mulitple of 3 or a mutliple of 5.
 
 const multiplesOfThreeOrFive = (n) => {
     for(let i = 1; i <= n;i++ ){
@@ -33,7 +33,7 @@ const multiplesOfThreeOrFive = (n) => {
 
 //multiplesOfThreeOrFive(100);
 
-// Write a function untilNum that takes in an integer parameter and console logs all numbers from 1 to that number.
+//4. Write a function untilNum that takes in an integer parameter and console logs all numbers from 1 to that number.
 
 const untilNum = (num) => {
     for (let i = 1; i <= num; i++){
@@ -43,7 +43,7 @@ const untilNum = (num) => {
 
 //untilNum(15);
 
-//Write a function multiply that takes in two number parameters and returns their product.
+//5. Write a function multiply that takes in two number parameters and returns their product.
 
 const multiply = (num1, num2) => {
     let result = num1 * num2;
@@ -52,7 +52,7 @@ const multiply = (num1, num2) => {
 
 //console.log(multiply(2, 4));
 
-// Write a function add that takes in two number parameters and returns their sum. But if the two values are the same, return triple their sum!
+//6. Write a function add that takes in two number parameters and returns their sum. But if the two values are the same, return triple their sum!
 const add = (num1, num2) => {
     let result = num1 * num2
     if (num1 === num2){
@@ -65,7 +65,7 @@ const add = (num1, num2) => {
 
 // console.log(add(2, 2));
 
-//Write a function isNegative that takes in a number parameter and returns true is the number is a negative value and false is the number is a positive value.
+//7. Write a function isNegative that takes in a number parameter and returns true is the number is a negative value and false is the number is a positive value.
 
 const isNegative = (num) => {
     if (num < 0) {
@@ -77,7 +77,7 @@ const isNegative = (num) => {
 
 //console.log(isNegative(Math.PI));
 
-// Write a function triangleArea that takes in the height and base of a triangle and returns the area of the triangle.
+//8. Write a function triangleArea that takes in the height and base of a triangle and returns the area of the triangle.
 
 const triangleArea = (height, base) => {
    let area = (height * base) * 0.5
@@ -85,7 +85,7 @@ const triangleArea = (height, base) => {
 };
 // console.log(triangleArea(5, 7))
 
-// Write a function betweenTwentyAndFourty that takes in a number parameter and checks whether a given integer is within 20 to 40. It returns true if it is and false if not.
+//9. Write a function betweenTwentyAndFourty that takes in a number parameter and checks whether a given integer is within 20 to 40. It returns true if it is and false if not.
 
 const betweenTwentyAndForty = (num) => {
     if (num >= 20 && num <= 40) {
@@ -97,7 +97,7 @@ const betweenTwentyAndForty = (num) => {
 
 // console.log(betweenTwentyAndForty(25));
 
-// Write a function largest that takes in three number parameters and returns the largest of the values.
+//10. Write a function largest that takes in three number parameters and returns the largest of the values.
 
 const largest = (num1, num2, num3) => {
     if(num1 > num2 && num1 > num3){
@@ -111,7 +111,7 @@ const largest = (num1, num2, num3) => {
 
 // largest(30, 22, 17)
 
-//Write a function printTime that prints out the current time in the format HH:MM:ss. Do not hard code the hour, minute, or seconds values.
+//11. Write a function printTime that prints out the current time in the format HH:MM:ss. Do not hard code the hour, minute, or seconds values.
 
 const printTime = () => {
     let time = new Date();
@@ -124,7 +124,7 @@ const printTime = () => {
 
 //printTime();
 
-//Write a function isLeapYear to determine whether a given year is a leap year in the Gregorian calendar.
+//12. Write a function isLeapYear to determine whether a given year is a leap year in the Gregorian calendar.
 
 const isLeapYear = (year) => {
     if (year % 100 === 0 && year % 400 !== 0){
@@ -138,7 +138,7 @@ const isLeapYear = (year) => {
 
 //console.log(isLeapYear(1999));
 
-//Write a function getExtention to get the extension of a filename.
+//13. Write a function getExtention to get the extension of a filename.
 
 const getExtension = (file) => {
     return file.substring(file.indexOf("."));
@@ -146,5 +146,45 @@ const getExtension = (file) => {
 
 //console.log(getExtension("hello.txt"));
 
+//largest(30, 22, 17)
+
+//14. Write a function absoluteNineteen to compute the absolute difference between a specified number and 19. Returns triple their absolute difference if the specified number is greater than 19.
+
+const absoluteNineteen = (num) => {
+    let abs = Math.abs(num - 19);
+    if (num > 19) {
+        return abs * 3;
+    } else {
+        return abs;
+    }
+}
+
+//console.log(absoluteNineteen(39));
+
+//15. Write a function switchLetters that creates a new string from a given string changing the position of first and last characters.
+
+const switchLetters = (str) => {
+  if (str.length <= 1) return str;
+  return str[str.length - 1] + str.slice(1, -1) + str[0];
+};
+
+// console.log(switchLetters("anne"))         //return "enna"
+// console.log(switchLetters("hello world"))  //return "dello worlh"
+// console.log(switchLetters("a"))            //return "a"
+// console.log(switchLetters(""))
+
+//16. Write a function changeString to replace every character in a given string with the character following it in the alphabet/
+
+const changeString = (str) => {
+    let chr = str.split("");
+    for (let i = 0; i < str.length; i++) {
+        let x = chr[i].charCodeAt() - "a".charCodeAt();
+        x = (x + 1) % 26;
+        chr[i] = String.fromCharCode(x + "a".charCodeAt());
+    }
+    return chr.join("");
+}
+
+//console.log(changeString("add"));
 
 
