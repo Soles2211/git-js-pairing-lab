@@ -11,27 +11,27 @@ const fiveToOneHundred = () => {
 
 //2. Write a function multiplesOfThree that console logs all positive numbers to 100 that is a multiple of 3.
 
-const multiplesOfThree  = (n) => {
-    for(let i = 1; i <= n;i++ ){
+const multiplesOfThree  = () => {
+    for(let i = 1; i <= 100;i++ ){
         if(i % 3 === 0){
             console.log(i);
         } 
     }
 }
 
-// multiplesOfThree(100);
+//multiplesOfThree();
 
 //3. Write a function multiplesOfThreeOrFive that console logs all positive numbers to 100 if that number is either a mulitple of 3 or a mutliple of 5.
 
-const multiplesOfThreeOrFive = (n) => {
-    for(let i = 1; i <= n;i++ ){
+const multiplesOfThreeOrFive = () => {
+    for(let i = 1; i <= 100;i++ ){
         if(i % 3 === 0 || i % 5 === 0){
             console.log(i);
         } 
     }
 }
 
-//multiplesOfThreeOrFive(100);
+//multiplesOfThreeOrFive();
 
 //4. Write a function untilNum that takes in an integer parameter and console logs all numbers from 1 to that number.
 
@@ -54,7 +54,7 @@ const multiply = (num1, num2) => {
 
 //6. Write a function add that takes in two number parameters and returns their sum. But if the two values are the same, return triple their sum!
 const add = (num1, num2) => {
-    let result = num1 * num2
+    let result = num1 + num2
     if (num1 === num2){
         let result2 = (num1 + num2) * 3
         return result2
@@ -88,14 +88,14 @@ const triangleArea = (height, base) => {
 //9. Write a function betweenTwentyAndFourty that takes in a number parameter and checks whether a given integer is within 20 to 40. It returns true if it is and false if not.
 
 const betweenTwentyAndForty = (num) => {
-    if (num >= 20 && num <= 40) {
+    if (num > 20 && num < 40) {
         return true;
     } else { 
         return false;
     }
 }
 
-// console.log(betweenTwentyAndForty(25));
+//console.log(betweenTwentyAndForty(40));
 
 //10. Write a function largest that takes in three number parameters and returns the largest of the values.
 
@@ -119,10 +119,10 @@ const printTime = () => {
     let min = time.getMinutes();
     let sec = time.getSeconds();
 
-    console.log(`The current time is: ${hour}: ${min}:${sec}`);
+    return `The current time is: ${hour}: ${min}:${sec}`;
 }
 
-//printTime();
+console.log(printTime());
 
 //12. Write a function isLeapYear to determine whether a given year is a leap year in the Gregorian calendar.
 
